@@ -12,15 +12,15 @@ class TranslateApp:
         self.root.title("TranslateApp - Clever Code")
         self.root.geometry("1190x370")
         self.root.resizable(width=False, height=False)
-        self.root.config(bg="#ececec")
+        self.root.config(bg="#1e1e1e")
 
-        self.original_text = Text(self.root, height=10, width=40, font=("Cascadia Code", 20))
+        self.original_text = Text(self.root, height=10, width=40, font=("Cascadia Code", 20), highlightthickness=1, borderwidth=0)
         self.original_text.grid(row=0, column=0, pady=20, padx=10)
 
         self.translate_button = Button(self.root, text="Translate!", font=("Cascadia Code", 20), command=self.translate)
         self.translate_button.grid(row=0, column=1, padx=10)
 
-        self.translated_text = Text(self.root, height=10, width=40, font=("Cascadia Code", 20))
+        self.translated_text = Text(self.root, height=10, width=40, font=("Cascadia Code", 20), highlightthickness=1, borderwidth=0)
         self.translated_text.grid(row=0, column=2, pady=20, padx=10)
 
         self.original_combo = ttk.Combobox(self.root, width=50, value=self.language_list)
