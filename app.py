@@ -10,7 +10,7 @@ class TranslateApp:
 
         self.root = root
         self.root.title("TranslateApp - Clever Code")
-        self.root.geometry("1165x370")
+        self.root.geometry("1190x370")
         self.root.resizable(width=False, height=False)
         self.root.config(bg="#ececec")
 
